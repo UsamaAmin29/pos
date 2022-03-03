@@ -1,0 +1,65 @@
+<mat-card class="no-box mat-elevation-z0">
+  <mat-card-title >Add New Account</mat-card-title>
+  <mat-card-content>
+    <form class="example-form">
+
+      <mat-grid-list cols="2" rowHeight="50px" [gutterSize]="'10px'" >
+        <mat-grid-tile class="tile-form">
+          <mat-form-field class="tile-form"  appearance="fill">
+            <mat-label>Account Name</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>Ref</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>E-Mail</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>Phone</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>CNIC</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>Address</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>Intial Balance</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field appearance="fill" class="tile-form"> 
+            <mat-label>Cr./Dr.</mat-label>
+            <mat-select>
+              <mat-option value="CR">CR</mat-option>
+              <mat-option value="DR">DR</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Add Account</button>
+  </mat-card-actions>
+</mat-card>

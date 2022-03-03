@@ -1,0 +1,46 @@
+<mat-card class="no-box mat-elevation-z0">
+  <mat-card-title >Edit Product</mat-card-title>
+  <mat-card-content>
+    <form class="example-form">
+
+      <mat-grid-list cols="2" rowHeight="50px" [gutterSize]="'10px'" >
+        <mat-grid-tile class="tile-form">
+          <mat-form-field class="tile-form"  appearance="fill">
+            <mat-label>Product Name</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+       
+        <mat-grid-tile>
+          <mat-form-field class="tile-form" appearance="fill">
+            <mat-label>Initial Balance</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+       
+        <mat-grid-tile>
+          <mat-form-field appearance="fill" class="tile-form"> 
+            <mat-label>Company Name</mat-label>
+            <mat-select>
+              <mat-option value="CR">Apple</mat-option>
+              <mat-option value="DR">Nokia</mat-option>
+              <mat-option value="DR">Asus</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+      
+      <mat-grid-tile>
+        <mat-form-field appearance="fill" class="tile-form"> 
+          <mat-label>Suplyer</mat-label>
+          <mat-select>              
+            <mat-option [value]="item.id" *ngFor="let item of accountsList">{{ item.name }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>   
+      </mat-grid-list>
+    </form>  
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Update Product</button>
+  </mat-card-actions>
+</mat-card>

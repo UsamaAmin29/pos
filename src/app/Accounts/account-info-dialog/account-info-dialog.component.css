@@ -1,0 +1,10 @@
+.dialog{
+    text-align: center;
+    background-color: rgb(114, 79, 179);
+    color: white;
+    margin-bottom: 7%; 
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* style="text-align: center; background-color: rgb(114, 79, 179); color: white; margin-bottom: 7%; padding-top: 2%; padding-bottom: 2%;" */
